@@ -1,0 +1,50 @@
+bungalow
+cottage
+apartment
+flat
+balcony
+abode
+condo
+townhouse
+pet-friendly
+smoke-free
+bedroom
+amenities
+toilet
+bathroom
+kitchen
+wifi
+wardrobe
+living room
+tv
+air conditioning
+neighborhood
+park
+restaurants
+shops
+city
+local shops
+gym
+view
+convenience store
+Community
+public transportation
+parking
+accessible parking
+bus stop
+train station
+tram station
+metro station
+airport
+laundry
+Mobility
+host
+cancellation
+hospitality
+communication
+check-in
+check-out
+instruction
+responsive
+approachable
+condition
