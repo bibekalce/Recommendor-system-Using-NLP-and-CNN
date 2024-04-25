@@ -40,19 +40,19 @@ Research_pipeline_2:Data_tranformation leverages previously identified topic wor
 Research_final_pipeline_benchmark/Proposed_model pipeline comprises two main models: the Singular Value Decomposition (SVD) model and the Proposed Model, alongside a Baseline Model for comparison. Both the proposed and baseline models utilize transformed profiles.
 
   -	**_Singular Value Decomposition (SVD) Model:_**
-    •	Trained using user-property interactions with latent features set to 150.
-    •	Property popularity measured using property frequency within the training dataset and scaled to [0,1].
-    •	During the evaluation, the SVD model incorporates a scaled property popularity dictionary and testing/validation data to handle new users by recommending top properties from the item popularity dictionary.
+      -	Trained using user-property interactions with latent features set to 150.
+      -	Property popularity measured using property frequency within the training dataset and scaled to [0,1].
+      -	During the evaluation, the SVD model incorporates a scaled property popularity dictionary and testing/validation data to handle new users by recommending top properties from the item popularity dictionary.
   
   - **_Baseline Model:_**
-    •	Utilizes only the user profile for training, along with the user-property interaction matrix as ground truth.
-    •	Employs a CNN architecture to capture intricate relationships between users and properties.
-    •	Output layer utilizes softmax activation to compute interaction probability for 3818 properties.
-    •	Training involves backpropagation to adjust feature weights, minimizing categorical cross-entropy loss to improve accuracy in user preference classification and recommendation generation.
+      +	Utilizes only the user profile for training, along with the user-property interaction matrix as ground truth.
+      +	Employs a CNN architecture to capture intricate relationships between users and properties.
+      +	Output layer utilizes softmax activation to compute interaction probability for 3818 properties.
+      +	Training involves backpropagation to adjust feature weights, minimizing categorical cross-entropy loss to improve accuracy in user preference classification and recommendation generation.
   
   -	**_Proposed Model:_**
   
-    •	Shares the same layer architecture as the baseline model but integrates feature-engineered inputs.
-    •	Feature engineering technique employed is User-Property Profile Fusion, achieved through elementwise multiplication of user and property profiles within the model architecture.
-    •	During fusion, each batch combines reshaped user profiles with all reshaped property profiles through element-wise multiplication, effectively capturing interactions between user preferences and property features.
-    •	Utilizes backpropagation for optimization of feature weights, minimizing categorical cross-entropy loss to learn patterns and dependencies inherent in user and property profiles, enabling accurate prediction of user-property interactions.
+    + Shares the same layer architecture as the baseline model but integrates feature-engineered inputs.
+    +	Feature engineering technique employed is User-Property Profile Fusion, achieved through elementwise multiplication of user and property profiles within the model architecture.
+    +	During fusion, each batch combines reshaped user profiles with all reshaped property profiles through element-wise multiplication, effectively capturing interactions between user preferences and property features.
+    +	Utilizes backpropagation for optimization of feature weights, minimizing categorical cross-entropy loss to learn patterns and dependencies inherent in user and property profiles, enabling accurate prediction of user-property interactions.
