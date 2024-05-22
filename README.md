@@ -1,4 +1,4 @@
-# Recommendor-system-Using-NLP-and-CNN
+# Recommender-system-Using-NLP-and-CNN
 ## **Dataset:**
 
 The [Seattle Airbnb Dataset](https://www.kaggle.com/datasets/airbnb/seattle), procured from Kaggle, was selected for its comprehensive
